@@ -58,10 +58,12 @@ const newRestaurantSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    tags: {
-      type: String,
-      required: true,
-    },
+    tags: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
     pics: [
       {
         type: String,
